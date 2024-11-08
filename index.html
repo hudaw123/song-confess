@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Confess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <div class="header">Song Menfess</div>
+
+    <div class="container">
+        <button class="confess-button" onclick="showPlayer()">Ada yang mengirimkan Song Menfess Untukmu!</button>
+
+        <div class="player-container" id="player-container">
+            <span class="play-icon" onclick="togglePlay()">▶️</span>
+            <audio id="song" src="love.mp3"></audio>
+            <div class="song-title">
+                <img src="love.jpg" alt="Music Icon" class="music-icon">
+                Love - Wave To Earth
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const song = document.getElementById('song');
+        const icon = document.querySelector('.play-icon');
+        const playerContainer = document.getElementById('player-container');
+
+        function showPlayer() {
+            playerContainer.style.display = 'block'; 
+            document.querySelector('.confess-button').style.display = 'none';
+        }
+
+        function togglePlay() {
+            if (song.paused) {
+                song.play();
+                icon.textContent = '⏸️'; 
+            } else {
+                song.pause();
+                icon.textContent = '▶️'; 
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(248, 147, 164);
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(248, 51, 84); 
+    color: #fff;
+}
+
+
+.container {
+    text-align: center;
+    background-color: rgb(248, 51, 84);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.confess-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(241, 54, 85);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confess-button:hover {
+    background-color: rgb(248, 19, 57);
+}
+
+
+.player-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.play-icon {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.play-icon:hover {
+    color: white;
+}
+
+.song-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+}
+
+.music-icon {
+    width: 24px;
+    height: 24px;
+}
